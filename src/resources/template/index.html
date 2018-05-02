@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="D:/BootstrapProjects/Pingendo/P2/wireframe.css"> </head>
+
+<body data-offset="50" data-spy="scroll" data-target=".navbar">
+<nav class="navbar navbar-expand-md bg-secondary navbar-dark fixed-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Java Design Patterns</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#behavioural" data-target="#behavioural">Behavioral</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#creational">Creational</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#structural">Structural</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="py-5 text-center" style="background-image: url('images/background-site.jpg');background-size:cover;">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mb-4 xs-4 text-primary display-5">DESIGN PATTERNS ARE THE READY DESCRIPTIONS GIVING SOLUTIONS TO REPETITIVE AND TYPICAL PROJECT PROBLEMS</h2>
+                <h4 class="lead mb-6 text-justify">They are the results of experience, hard work and a great number of trials and errors. They also represent considered and best practices of object-oriented programming (SOLID, DRY, KISS and YAGNI). The patterns became an element of communication
+                    among programmers and they are an element of every engineer’s primer.</h4>
+                <h4 class="lead mb-6 text-justify"> In general, design patterns are nothing else than walkthroughs for repetitive problems, which were worth writing down and understanding. It is worth noticing that design patterns don’t suggest a direct implementation of a solution, but are only
+                    an outline of a structure with some characteristic aspects that should be adapted to our needs. </h4>
+                <h4 class="lead mb-6 text-justify">The very notion of design patterns was introduced by Christopher Alexander in 1977. Then , in 1987, Kent Beck and Ward Cunningham gave life to patterns of modern computer science. Several years passed and in 1994 the Gang of Four has published
+                    “Design Patterns: Elements of Reusable Object-Oriented Software”. The work of Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides is constantly helping developers in introducing best practices. </h4>
+                <h4 class="lead mb-6 text-justify">Imagine the situation in which a fellow programmer tries to explain to you how a flow between widgets and a class communicating through SOAP works. Easier and definitely faster would be to say “my walkthrough uses observer pattern”. </h4>
+                <h4
+                        class="lead mb-6 text-justify">It is worth noticing that there is no homogeneous division of design patterns and, usually, there are as many of them as studies on this subject. For the purpose of this article we use the division proposed by the Gang of Four: </h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#behavioural">Behavioural patterns</a>
+                    </li>
+                    <li class="">
+                        <a href="#creational">Creational patterns</a>
+                    </li>
+                    <li>
+                        <a href="#structural">Structural patterns</a>
+                    </li>
+                </ul>
+                <h4 class="lead mb-6 text-justify"> Each design pattern is suitable for a determined situation. Used in an improper scenario they may do more harm than good! In this article, we will limit ourselves to selected patterns which will represent given categories proposed by the Gang
+                    of Four.</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-4 container-fluid" id="behavioural" style="background-image: url('images/background-site.jpg');background-size:cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center bg-secondary">
+                <div class="row">
+                    <div class="col-md-12 py-5" style="background-image: url('images/behavioural_background.jpg');background-size:cover;">
+                        <h1 class="text-light">BEHAVIOURAL PATTERNS</h1>
+                        <p class="text-light text-justify">Behavioural patterns task is to introduce flexibility to solutions connected with inter-objects communication. They are focused on allocating specific roles and duties between objects in communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/chainofresponsibility.png">
+                    <div class="card-body" >
+                        <h5 class="card-title">Chain of responsibility</h5>
+                        <p class="card-text text-justify">Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/command.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Command</h5>
+                        <p class="card-text">Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/interpreter.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Interpreter</h5>
+                        <p class="card-text">Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/iterator.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Iterator</h5>
+                        <p class="card-text">Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/mediator.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Mediator</h5>
+                        <p class="card-text">Define an object that encapsulates how a set of objects interact.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/memento.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Memento</h5>
+                        <p class="card-text">Without violating encapsulation, capture and externalize an object's internal state allowing the object to be restored to this state later.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/observer.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Observer</h5>
+                        <p class="card-text">Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/state.png">
+                    <div class="card-body">
+                        <h5 class="card-title">State</h5>
+                        <p class="card-text">Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/strategy.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Strategy</h5>
+                        <p class="card-text">Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/template.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Template</h5>
+                        <p class="card-text">Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/visitor.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Visitor</h5>
+                        <p class="card-text">Represent an operation to be performed on the elements of an object structure. Visitor lets a new operation be defined without changing the classes of the elements on which it operates.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-4 container-fluid bg-info" id="creational" style="background-image: url('images/background-site.jpg');background-size:cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center bg-secondary">
+                <div class="row">
+                    <div class="col-md-12 py-5" style="background-image: url('images/creational_background.jpg');background-size:cover;">
+                        <h1 class="text-white">CREATIONAL PATTERNS</h1>
+                        <p class="text-justify text-white">Creational patterns are associated with control mechanisms of creating objects. The basic mode of forming an object may be problematic in some projects and may lead to unnecessary complexity in some areas. Creational patterns are supposed
+                            to prevent from occurring problems and introduce more control over creating objects. Their task is to separate the processes of creation, completion and representation of an object.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/abstractfactory.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Abstract Factory</h5>
+                        <p class="card-text">Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/builder.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Builder</h5>
+                        <p class="card-text">Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/factorymethod.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Factory</h5>
+                        <p class="card-text">Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/prototype.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Prototype</h5>
+                        <p class="card-text">Specify the kinds of objects to create using a prototypical instance, and create new objects from the 'skeleton' of an existing object,
+                            <br>thus boosting performance and keeping memory footprints to a minimum.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/singleton.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Singleton</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-4 container-fluid" id="structural" style="background-image: url('images/background-site.jpg');background-size:cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center bg-secondary">
+                <div class="row">
+                    <div class="col-md-12 py-5" style="background-image: url('images/structural_background.jpg');background-size:cover;">
+                        <h1 class="text-light">STRUCTURAL PATTERNS</h1>
+                        <p class="text-light text-justify">The most important feature of these patterns is to facilitate the operation and design applications through finding an easy way to realize dependencies between entities. Due to this patterns it is easier to design applications which contain
+                            independent class libraries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/adapter.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Adapter</h5>
+                        <p class="card-text">Convert the interface of a class into another interface clients expect.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/bridge.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridge</h5>
+                        <p class="card-text">Decouple an abstraction from its implementation allowing the two to vary independently.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/composite.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Composite</h5>
+                        <p class="card-text">Compose objects into tree structures to represent part-whole hierarchies.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/decorator.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Decorator</h5>
+                        <p class="card-text">Attach additional responsibilities to an object dynamically keeping the same interface.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/facade.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Facade</h5>
+                        <p class="card-text">Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/flyweight.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Flyweight</h5>
+                        <p class="card-text">Use sharing to support large numbers of similar objects efficiently.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card box-shadow">
+                    <img class="card-img-top zoom" src="images/proxy.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Proxy</h5>
+                        <p class="card-text">Provide a surrogate or placeholder for another object to control access to it.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
